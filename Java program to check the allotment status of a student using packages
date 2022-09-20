@@ -1,0 +1,49 @@
+//Create a package, under this package create a class named student
+public class student {
+
+    int en = 40, cgpa = 90;
+
+    public void display() {
+
+        System.out.println("STUDENT DETAILS");
+
+        System.out.println("Name of the student is:Ann");
+        System.out.println("Roll No:ec025");
+        System.out.println("CGPA:" + cgpa);
+
+        System.out.println("Entrance score:" + en);
+
+        System.out.println("\nALLOTMENT STATUS");
+        if (en >= 50 && cgpa >= 50) {
+            System.out.println("...You have been Alloted...");
+        } else {
+            System.out.println("...You have been not been Alloted...");
+        }
+    }
+}
+
+//Create another package, under this package create a class named check
+
+import detail.student;
+
+public class check {
+
+    public static void main(String args[]) {
+        student s = new student();
+        s.display();
+
+    }
+}
+//Run the check class.
+
+
+//OUTPUT OF THE ABOVE CODE
+
+STUDENT DETAILS
+Name of the student is:Ann
+Roll No:ec025
+CGPA:90
+Entrance score:40
+
+ALLOTMENT STATUS
+...You have been not been Alloted...
